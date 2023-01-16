@@ -11,7 +11,7 @@ ui_print "- Magisk version: $MAGISK_VER_CODE"
 
 CODENAME=$(getprop ro.product.vendor.device)
 CFGVERSION=$(cat /vendor/firmware/carrierconfig/release-label)
-CFGHASH=$(sha256sum -b /vendor/firmware/carrierconfig/cfg.db)
+CFGHASH=$(toybox sha256sum -b /vendor/firmware/carrierconfig/cfg.db)
 
 
 # In this module we try to fix LTE restrictions on non-certified
