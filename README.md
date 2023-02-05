@@ -9,3 +9,5 @@ In this module we try to fix LTE restrictions on non-certified (actually CIS) ne
 confnames -> it_iliad -> 2124 -> confmap -> 2124_as_hash -> WILDCARD (0) / PTCRB (20001) / PTCRB_ROW (20005) -> it_iliad_2124_hash  
 
 CA table from "it_iliad (2124)" config can be found here: https://cacombos.com/device/GVU6C?combolist=iliad_italy
+
+!!!!!!!!!! CA combinations currently not implemented !!!!!!!!!!
