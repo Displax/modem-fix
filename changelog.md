@@ -1,3 +1,6 @@
+1.3  
+• Add support for QPR2 BETA 3.1
+
 1.2  
 • Add support for QPR2 BETA 3
 
