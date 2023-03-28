@@ -1,3 +1,6 @@
+1.5  
+• Add support for QPR3 BETA 1
+
 1.4  
 • Add support for QPR2 Mar 2023 udate
 
