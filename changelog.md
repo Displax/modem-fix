@@ -1,3 +1,7 @@
+1.6  
+• Add support for QPR3 BETA 2.1
+• Fix installation on Magisk 26xxx+
+
 1.5  
 • Add support for QPR3 BETA 1
 
