@@ -43,6 +43,7 @@ ui_print "- CFG file state is: $CFGHASH"
 # 13.0.0       TQ1A.230205.002         Feb 2023          cfgdb-whipro-221028-B-9229469      607a87c1b5e9ca28e6e400a32a1cb67fa8b11284d2240118870e65a059eac1c0      744f716abbb52eeea16696a35d5d4b111a9f0609
 # 13.0.0       TQ2A.230305.008         Mar 2023          cfgdb-whipro-230210-B-9589366      543f166c290a2d503b853164f77cbd62e9b1c4d22d3423e0f44b51cc68c5e66c      363ea196cb28a63decea20ecf726a1fa4d25eb59
 # 13.0.0       TQ2A.230305.008.C1      Mar 2023          cfgdb-whipro-230210-B-9589366      543f166c290a2d503b853164f77cbd62e9b1c4d22d3423e0f44b51cc68c5e66c      363ea196cb28a63decea20ecf726a1fa4d25eb59
+# 13.0.0       TQ2A.230405.003.E1      Apr 2023          cfgdb-whipro-230323-B-9800995      d304b14f23bb37fecf9d8cc8695b2c2255e21404aafa35665d6235812ef57237      363ea196cb28a63decea20ecf726a1fa4d25eb59
 # 13.0.0       T3B2.230316.005         QPR3_2.1          cfgdb-whipro-230329-B-9845548      fab329cfb1f346bb2e420374dbb7d151f5facd17fb2df4ed9949c39602f427b0      b5ccb2918cb6f1ac97efe4bbde038488d5adec84
 
 
@@ -60,6 +61,7 @@ ui_print "- CFG file state is: $CFGHASH"
 # 13.0.0       TQ1A.230105.001.A2      Jan 2023          cfgdb-whi-221101-B-9242015         1c623e91b285306015b4387d92d26dd3d1f7d78efe1506c42d6f3e6375c00dd0      c7dead7b478f240cf3e3ac42873af315b6d715df
 # 13.0.0       TQ1A.230205.002         Feb 2023          cfgdb-whi-221101-B-9242015         1c623e91b285306015b4387d92d26dd3d1f7d78efe1506c42d6f3e6375c00dd0      c7dead7b478f240cf3e3ac42873af315b6d715df
 # 13.0.0       TQ2A.230305.008.E1      Mar 2023          cfgdb-whi-230302-B-9675756         772122dfaa7ae641a6386c375d06ea6d3e9c159fce3c57f35d9277199debc268      d09a227525324ae85e72e29b864e69a2de2fa448
+# 13.0.0       TQ2A.230405.003.E1      Apr 2023          cfgdb-whi-230323-B-9800744         807a9cf915679cd08b799346537c7ea6277bb9b4e45f437e75b90363bc36b390      2ad9755505952d4253580d075076c2c2669dbe60
 # 13.0.0       T3B2.230316.005         QPR3_2.1          cfgdb-whi-230330-B-9849771         42a981e30e2dba7bfcdf039839fb621d9e799e258cb891e3efb50b9f1928edc3      f6d6147ac2d9b4d35dd13440046c52e0bd6604e2
 
 
@@ -87,17 +89,24 @@ ui_print "- CFG file state is: $CFGHASH"
 # 13.0.0       TQ1A.230105.002         Jan 2023          cfgdb-whi-221101-B-9242015         1c623e91b285306015b4387d92d26dd3d1f7d78efe1506c42d6f3e6375c00dd0      c7dead7b478f240cf3e3ac42873af315b6d715df
 # 13.0.0       TQ1A.230205.002         Feb 2023          cfgdb-whi-221101-B-9242015         1c623e91b285306015b4387d92d26dd3d1f7d78efe1506c42d6f3e6375c00dd0      c7dead7b478f240cf3e3ac42873af315b6d715df
 # 13.0.0       TQ2A.230305.008.E1      Mar 2023          cfgdb-whi-230302-B-9675756         772122dfaa7ae641a6386c375d06ea6d3e9c159fce3c57f35d9277199debc268      d09a227525324ae85e72e29b864e69a2de2fa448
+# 13.0.0       TQ2A.230405.003.E1      Apr 2023          cfgdb-whi-230323-B-9800744         807a9cf915679cd08b799346537c7ea6277bb9b4e45f437e75b90363bc36b390      2ad9755505952d4253580d075076c2c2669dbe60
 # 13.0.0       T3B2.230316.005         QPR3_2.1          cfgdb-whi-230330-B-9849771         42a981e30e2dba7bfcdf039839fb621d9e799e258cb891e3efb50b9f1928edc3      f6d6147ac2d9b4d35dd13440046c52e0bd6604e2
 
 
     # Pixel 7/7P product line (panther, cheetah)
-if [ "$CODENAME" == "panther" ] || [ "$CODENAME" == "cheetah" ] && [ "$CFGVER" == "cfgdb-whipro-230210-B-9589366" ]; then
+if [ "$CODENAME" == "panther" ] || [ "$CODENAME" == "cheetah" ] && [ "$CFGVER" == "cfgdb-whipro-230323-B-9800995" ]; then
+    cp -rf "$MODPATH/cfgs/pixel_7/cfgdb-whipro-230323-B-9800995/cfg.db" "$MODPATH/system/vendor/firmware/carrierconfig/"
+
+elif [ "$CODENAME" == "panther" ] || [ "$CODENAME" == "cheetah" ] && [ "$CFGVER" == "cfgdb-whipro-230210-B-9589366" ]; then
     cp -rf "$MODPATH/cfgs/pixel_7/cfgdb-whipro-230210-B-9589366/cfg.db" "$MODPATH/system/vendor/firmware/carrierconfig/"
 
 elif [ "$CODENAME" == "panther" ] || [ "$CODENAME" == "cheetah" ] && [ "$CFGVER" == "cfgdb-whipro-221028-B-9229469" ]; then
     cp -rf "$MODPATH/cfgs/pixel_7/cfgdb-whipro-221028-B-9229469/cfg.db" "$MODPATH/system/vendor/firmware/carrierconfig/"
 
     # Pixel 6/6P/6a product line (oriole, raven, bluejay)
+elif [ "$CODENAME" == "raven" ] || [ "$CODENAME" == "oriole" ] || [ "$CODENAME" == "bluejay" ] && [ "$CFGVER" == "cfgdb-whi-230323-B-9800744" ]; then
+    cp -rf "$MODPATH/cfgs/pixel_6/cfgdb-whi-230323-B-9800744/cfg.db" "$MODPATH/system/vendor/firmware/carrierconfig/"
+
 elif [ "$CODENAME" == "raven" ] || [ "$CODENAME" == "oriole" ] || [ "$CODENAME" == "bluejay" ] && [ "$CFGVER" == "cfgdb-whi-230302-B-9675756" ]; then
     cp -rf "$MODPATH/cfgs/pixel_6/cfgdb-whi-230302-B-9675756/cfg.db" "$MODPATH/system/vendor/firmware/carrierconfig/"
 

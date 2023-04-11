@@ -1,3 +1,6 @@
+1.7  
+• Add support for Apr 2023 udate
+
 1.6  
 • Add support for QPR3 BETA 2.1
 • Fix installation on Magisk 26xxx+
@@ -6,7 +9,7 @@
 • Add support for QPR3 BETA 1
 
 1.4  
-• Add support for QPR2 Mar 2023 udate
+• Add support for Mar 2023 udate
 
 1.3  
 • Add support for QPR2 BETA 3.1
