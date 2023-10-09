@@ -1,3 +1,7 @@
+1.9  
+• Add support for Android 14
+• Add support for Pixel 7a
+
 1.8  
 • Add support for Jun 2023 udate
 

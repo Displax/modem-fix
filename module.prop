@@ -1,7 +1,7 @@
 id=universalmdmfix
 name=Universal Modem Fix
-version=1.8
-versionCode=9
+version=1.9
+versionCode=10
 author=Displax [4PDA]
 description=Fix LTE restrictions on non-certified (CIS) networks for Google Tensor devices.
 updateJson=https://raw.githubusercontent.com/Displax/modem-fix/main/update.json
